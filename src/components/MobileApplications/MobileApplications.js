@@ -45,8 +45,8 @@ const MobileApplications = () => {
           </div>
         </div>
         <div className="download-buttons">
-            <a href="#" className="download-button play-store"><FaGooglePlay /> Google Play</a>
-            <a href="#" className="download-button app-store"><FaAppStore /> App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.HealthGuide&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className="download-button play-store"><FaGooglePlay /> Google Play</a>
+            <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" className="download-button app-store"><FaAppStore /> App Store</a>
         </div>
         <div className="page-content" style={{ marginTop: '2rem' }}>
           <div className="card">

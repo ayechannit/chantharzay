@@ -37,7 +37,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="google-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.3251607038096!2d99.05730907602016!3d18.783657082361746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da2535b5da45d3%3A0x9da39b5eca6bf3db!2z4Lia4LmJ4Liy4LiZ4Lie4Lij4LmJ4Lit4Lih4LmC4LiK4LiEIOC5geC4oeC4meC4iuC4seC5iOC4mSA2!5e0!3m2!1sen!2sth!4v1768884371648!5m2!1sen!2sth" width="100%" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe title="Company Location Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.3251607038096!2d99.05730907602016!3d18.783657082361746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da2535b5da45d3%3A0x9da39b5eca6bf3db!2z4Lia4LmJ4Liy4LiZ4Lie4Lij4LmJ4Lit4Lih4LmC4LiK4LiEIOC5geC4oeC4meC4iuC4seC5iOC4mSA2!5e0!3m2!1sen!2sth!4v1768884371648!5m2!1sen!2sth" width="100%" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
