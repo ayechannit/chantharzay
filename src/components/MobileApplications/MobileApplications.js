@@ -37,7 +37,15 @@ const MobileApplications = () => {
           </div>
         </div>
         <div className="app-screenshots-container">
-          <h2>App Screenshots</h2>
+          <h2>User App</h2>
+          <div className="app-screenshots">
+            <img src="https://placehold.co/200x400/0A4D68/F7F7F7?text=App+Screenshot+1" alt="App Screenshot 1" />
+            <img src="https://placehold.co/200x400/088395/F7F7F7?text=App+Screenshot+2" alt="App Screenshot 2" />
+            <img src="https://placehold.co/200x400/5C8D89/F7F7F7?text=App+Screenshot+3" alt="App Screenshot 3" />
+          </div>
+        </div>
+        <div className="app-screenshots-container">
+          <h2>Clinic App</h2>
           <div className="app-screenshots">
             <img src="https://placehold.co/200x400/0A4D68/F7F7F7?text=App+Screenshot+1" alt="App Screenshot 1" />
             <img src="https://placehold.co/200x400/088395/F7F7F7?text=App+Screenshot+2" alt="App Screenshot 2" />
