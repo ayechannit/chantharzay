@@ -1,0 +1,60 @@
+.process-section {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.process-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 2.5rem;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+}
+
+.step {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  text-align: center;
+  position: relative;
+}
+
+.step svg {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  background-color: var(--light-color);
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step h4 {
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.step p {
+  line-height: 1.6;
+}
+
+/* Decorative connecting lines for larger screens */
+@media (min-width: 992px) {
+  .step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 3rem; /* Align with center of icon */
+    right: -25%;
+    width: 50%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    z-index: -1;
+  }
+}

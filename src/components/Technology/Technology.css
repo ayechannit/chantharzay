@@ -1,0 +1,32 @@
+.tech-card {
+  text-align: center;
+}
+
+.tech-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.technology-philosophy {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: var(--light-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.technology-philosophy h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.technology-philosophy p {
+  line-height: 1.8;
+  color: var(--dark-color);
+}
