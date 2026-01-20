@@ -5,6 +5,20 @@ import '../Page/Page.css';
 import './MobileApplications.css';
 import '../Card/Card.css';
 
+import health_guide_login from '../../image/user/health_guide_login.png';
+import health_guide_home from '../../image/user/health_guide_home.png';
+import health_guide_category from '../../image/user/health_guide_category.png';
+import health_guide_answer from '../../image/user/health_guide_answer.png';
+import health_guide_answer_1 from '../../image/user/health_guide_answer_1.png';
+import health_guide_result from '../../image/user/health_guide_result.png';
+
+import health_guide_apointment from '../../image/clinic/health_guide_apointment.png';
+import health_guide_booking_confirm from '../../image/clinic/health_guide_booking_confirm.png';
+import health_guide_booking from '../../image/clinic/health_guide_booking.png';
+import health_guide_date_picker from '../../image/clinic/health_guide_date_picker.png';
+import health_guide_doctor_selection from '../../image/clinic/health_guide_doctor_selection.png';
+import health_guide_time_picker from '../../image/clinic/health_guide_time_picker.png';
+
 const MobileApplications = () => {
   return (
     <div className="mobile-applications-container">
@@ -39,17 +53,23 @@ const MobileApplications = () => {
         <div className="app-screenshots-container">
           <h2>User App</h2>
           <div className="app-screenshots">
-            <img src="https://placehold.co/200x400/0A4D68/F7F7F7?text=App+Screenshot+1" alt="App Screenshot 1" />
-            <img src="https://placehold.co/200x400/088395/F7F7F7?text=App+Screenshot+2" alt="App Screenshot 2" />
-            <img src="https://placehold.co/200x400/5C8D89/F7F7F7?text=App+Screenshot+3" alt="App Screenshot 3" />
+            <img src={health_guide_login} alt="App Screenshot 1" />
+            <img src={health_guide_home} alt="App Screenshot 2" />
+            <img src={health_guide_category} alt="App Screenshot 3" />
+            <img src={health_guide_answer} alt="App Screenshot 1" />
+            <img src={health_guide_answer_1} alt="App Screenshot 2" />
+            <img src={health_guide_result} alt="App Screenshot 3" />
           </div>
         </div>
         <div className="app-screenshots-container">
           <h2>Clinic App</h2>
           <div className="app-screenshots">
-            <img src="https://placehold.co/200x400/0A4D68/F7F7F7?text=App+Screenshot+1" alt="App Screenshot 1" />
-            <img src="https://placehold.co/200x400/088395/F7F7F7?text=App+Screenshot+2" alt="App Screenshot 2" />
-            <img src="https://placehold.co/200x400/5C8D89/F7F7F7?text=App+Screenshot+3" alt="App Screenshot 3" />
+            <img src={health_guide_apointment} alt="App Screenshot 1" />
+            <img src={health_guide_booking_confirm} alt="App Screenshot 2" />
+            <img src={health_guide_booking} alt="App Screenshot 3" />
+            <img src={health_guide_date_picker} alt="App Screenshot 4" />
+            <img src={health_guide_doctor_selection} alt="App Screenshot 5" />
+            <img src={health_guide_time_picker} alt="App Screenshot 6" />
           </div>
         </div>
         <div className="download-buttons">
