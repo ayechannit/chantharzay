@@ -1,54 +1,57 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { FaLightbulb, FaUsers, FaHeartbeat } from 'react-icons/fa';
 import './Home.css';
 import '../Card/Card.css';
 
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="home-container">
       <header className="home-header">
-        <h1>Pioneering the Future of Digital Health</h1>
-        <p>Innovative, reliable, and user-centric digital solutions for the modern healthcare industry.</p>
-        <Link to="/contact" className="cta-button">Get in Touch</Link>
+        <h1>{t('home_header_title')}</h1>
+        <p>{t('home_header_subtitle')}</p>
+        <Link to="/contact" className="cta-button">{t('get_in_touch_button')}</Link>
       </header>
       <section className="home-section">
-        <h2>Our Healthcare Ecosystem</h2>
+        <h2>{t('our_healthcare_ecosystem')}</h2>
         <div className="home-cards">
           <div className="card">
-            <h3>Healthcare Solutions</h3>
-            <p>We build scalable solutions for Web, iOS, and Android platforms, focusing on enhancing clinical efficiency and patient engagement.</p>
-            <Link to="/healthcare-solutions">Learn More</Link>
+            <h3>{t('healthcare_solutions_card_title')}</h3>
+            <p>{t('healthcare_solutions_card_text')}</p>
+            <Link to="/healthcare-solutions">{t('learn_more_button')}</Link>
           </div>
           <div className="card">
-            <h3>Mobile Applications</h3>
-            <p>Custom mobile applications tailored to your organization's specific needs, from patient portals to clinical trial management systems.</p>
-            <Link to="/mobile-applications">Learn More</Link>
+            <h3>{t('mobile_applications_card_title')}</h3>
+            <p>{t('mobile_applications_card_text')}</p>
+            <Link to="/mobile-applications">{t('learn_more_button')}</Link>
           </div>
           <div className="card">
-            <h3>Our Technology</h3>
-            <p>Leveraging the latest technologies to create secure, scalable, and intuitive healthcare applications that put users first.</p>
-            <Link to="/technology">Learn More</Link>
+            <h3>{t('our_technology_card_title')}</h3>
+            <p>{t('our_technology_card_text')}</p>
+            <Link to="/technology">{t('learn_more_button')}</Link>
           </div>
         </div>
       </section>
       <section className="why-choose-us">
-        <h2>Why Choose Us?</h2>
+        <h2>{t('why_choose_us')}</h2>
         <div className="features">
           <div className="feature-item">
             <FaLightbulb className="feature-icon" />
-            <h3>Innovative Solutions</h3>
-            <p>We are committed to continuous innovation, staying at the forefront of technology to solve real-world healthcare challenges.</p>
+            <h3>{t('innovative_solutions_title')}</h3>
+            <p>{t('innovative_solutions_text')}</p>
           </div>
           <div className="feature-item">
             <FaUsers className="feature-icon" />
-            <h3>User-Centric Design</h3>
-            <p>Our solutions are designed with the user in mind, ensuring an intuitive and seamless experience for both patients and providers.</p>
+            <h3>{t('user_centric_design_title')}</h3>
+            <p>{t('user_centric_design_text')}</p>
           </div>
           <div className="feature-item">
             <FaHeartbeat className="feature-icon" />
-            <h3>Healthcare Focused</h3>
-            <p>With a deep understanding of the medical industry, we create solutions that are not only technologically advanced but also clinically relevant.</p>
+            <h3>{t('healthcare_focused_title')}</h3>
+            <p>{t('healthcare_focused_text')}</p>
           </div>
         </div>
       </section>

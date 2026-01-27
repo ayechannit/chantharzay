@@ -1,15 +1,18 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { FaFacebook, FaTiktok, FaViber, FaTelegram } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>&copy; 2024 Chantharzay. All rights reserved.</p>
+        <p>{t('footer_copyright')}</p>
         <div className="footer-links">
-          <a href="/privacy-policy">Privacy Policy</a>
-          <a href="/terms-of-service">Terms of Service</a>
+          <a href="/privacy-policy">{t('privacy_policy')}</a>
+          <a href="/terms-of-service">{t('terms_of_service')}</a>
         </div>
         <div className="social-icons">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>

@@ -1,38 +1,41 @@
 import React from 'react';
 import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaClock } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import Header from '../Header/Header';
 import '../Page/Page.css';
 import './Contact.css';
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="contact-container">
-      <Header title="Contact Us" subtitle="We'd love to hear from you. Please reach out with any questions or inquiries." />
+      <Header title={t('contact_us')} subtitle={t('contact_us_subtitle')} />
       <div className="page-container">
         <div className="contact-wrapper">
           <div className="contact-info">
-            <h3>Get in Touch</h3>
-            <p><FaMapMarkerAlt /> <strong>Address:</strong> [Your Company Address]</p>
-            <p><FaEnvelope /> <strong>Email:</strong> [Your Company Email]</p>
-            <p><FaPhone /> <strong>Phone:</strong> [Your Company Phone]</p>
-            <p><FaClock /> <strong>Business Hours:</strong> [Your Business Hours]</p>
+            <h3>{t('get_in_touch')}</h3>
+            <p><FaMapMarkerAlt /> <strong>{t('address')}:</strong> [Your Company Address]</p>
+            <p><FaEnvelope /> <strong>{t('email')}:</strong> [Your Company Email]</p>
+            <p><FaPhone /> <strong>{t('phone')}:</strong> [Your Company Phone]</p>
+            <p><FaClock /> <strong>{t('business_hours')}:</strong> [Your Business Hours]</p>
           </div>
           <div className="contact-form">
-            <h3>Send us a Message</h3>
+            <h3>{t('send_us_a_message')}</h3>
             <form>
               <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" />
+                <label htmlFor="name">{t('name')}</label>
+                <input type="text" id="name" name="name" placeholder={t('your_name')} />
               </div>
               <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" />
+                <label htmlFor="email">{t('email')}</label>
+                <input type="email" id="email" name="email" placeholder={t('your_email')} />
               </div>
               <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                <label htmlFor="message">{t('message')}</label>
+                <textarea id="message" name="message" placeholder={t('your_message')}></textarea>
               </div>
-              <button type="submit" className="cta-button">Send Message</button>
+              <button type="submit" className="cta-button">{t('send_message')}</button>
             </form>
           </div>
         </div>

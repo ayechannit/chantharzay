@@ -1,0 +1,29 @@
+.language-switcher {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.language-switcher button {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.language-switcher button:hover {
+  background-color: var(--dark-color);
+}
+
+.language-switcher button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
