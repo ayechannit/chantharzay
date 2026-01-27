@@ -80,3 +80,14 @@ textarea {
 .google-map iframe {
   display: block;
 }
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info, .contact-form {
+    min-width: 100%;
+  }
+}

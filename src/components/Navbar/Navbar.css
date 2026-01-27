@@ -61,6 +61,7 @@
   cursor: pointer;
   flex-direction: column;
   gap: 4px;
+  z-index: 1001;
 }
 
 .menu-icon div {
